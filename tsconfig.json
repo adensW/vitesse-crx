@@ -3,7 +3,10 @@
     "baseUrl": ".",
     "module": "ESNext",
     "target": "es2016",
-    "lib": ["DOM", "ESNext"],
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
     "strict": true,
     "esModuleInterop": true,
     "jsx": "preserve",
@@ -18,12 +21,25 @@
     "types": [
       "vite/client",
       "vue/ref-macros",
-      "chrome"
+      "chrome",
     ],
     "paths": {
-      "~/*": ["src/*"],
+      "~/*": [
+        "src/*"
+      ],
     },
   },
-  "exclude": ["dist", "node_modules", "cypress"],
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue","vite.config.ts","manifest.ts"],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "cypress"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "vite.config.ts",
+    "manifest.ts"
+  ],
 }
